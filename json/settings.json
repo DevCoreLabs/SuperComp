@@ -1,0 +1,112 @@
+{
+    "title": "Settings",
+    "sidebar": {
+        "sections": [
+            {
+                "label": "Account",
+                "items": [
+                    {
+                        "key": "edit_profile",
+                        "label": "Edit Profile",
+                        "icon": "user",
+                        "active": true
+                    },
+                    {
+                        "key": "signature",
+                        "label": "Signature",
+                        "icon": "pen"
+                    },
+                    {
+                        "key": "add_sub_user",
+                        "label": "Add sub-user",
+                        "icon": "user_plus"
+                    }
+                ]
+            },
+            {
+                "label": "Mail",
+                "items": [
+                    {
+                        "key": "automatic_replies",
+                        "label": "Automatic replies",
+                        "icon": "reply"
+                    }
+                ]
+            }
+        ]
+    },
+    "content": {
+        "title": "Edit Profile",
+        "description": "Manage your personal information and preferences.",
+        "fields": {
+            "account": {
+                "type": "dropdown",
+                "label": "Account",
+                "placeholder": "Select account",
+                "required": true,
+            },
+            "profilePhoto": {
+                "type": "image_upload",
+                "label": "Profile Photo",
+                "required": true,
+                "actions": [
+                    {
+                        "type": "button",
+                        "label": "Upload Photo",
+                        "action": "upload_profile_photo"
+                    },
+                    {
+                        "type": "icon_button",
+                        "icon": "delete",
+                        "action": "remove_profile_photo"
+                    }
+                ]
+            },
+            "name": {
+                "type": "text",
+                "label": "Name",
+                "placeholder": "Enter your name",
+                "required": true
+            },
+            "location": {
+                "type": "text",
+                "label": "Location",
+                "placeholder": "Enter your location",
+                "required": true,
+            },
+            "bio": {
+                "type": "textarea",
+                "label": "Bio",
+                "placeholder": "Write a short bio",
+                "required": true,
+                "maxLength": 160
+            },
+            "defaultTextStyle": {
+                "type": "text_style_picker",
+                "label": "Default text style",
+                "required": true,
+            }
+        },
+        "actions": {
+            "primary": {
+                "type": "button",
+                "label": "Save",
+                "action": "save_profile",
+                "style": "primary"
+            },
+            "secondary": [
+                {
+                    "type": "button",
+                    "label": "Cancel",
+                    "action": "reset_changes",
+                    "style": "outline"
+                }
+            ]
+        }
+    },
+    "settings": {
+        "closeable": true,
+        "scrollable": true,
+        "resizable": true
+    }
+}

@@ -1,0 +1,95 @@
+<div class="app-header-inner">
+    <button class="app-toggler d-xl-none" type="button" aria-label="app toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="app-header-start d-none d-md-flex">
+        <form class="d-flex align-items-center h-100  w-xxl-700px position-relative search-form-container" action="#">
+            <button type="button" class="btn btn-sm border-0 position-absolute start-0 ms-3 p-0">
+                <i class="fi fi-rr-search d-flex justify-content-center"></i>
+            </button>
+            <input type="text" id="searchInput" class="form-control rounded-5 ps-5" placeholder="Search mail"
+                autocomplete="off">
+
+            <div id="searchDropdown" class="search-dropdown">
+                <div class="search-dropdown-content">
+                    <!-- Dropdown items will be injected here by JS -->
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <div class="app-header-end">
+        <!-- <div class="vr my-3"></div> -->
+        <div class="d-flex align-items-center gap-sm-2 gap-0  ">
+
+            <div class="d-flex profile-wrapper tool-hover">
+
+                <a tabindex="0"
+                    class="d-flex btn btn-icon btn-action-gray rounded-circle waves-effect waves-light profile-btn">
+                    <span class="icon-profile"></span>
+                </a>
+
+                <div class="profile-dropdown">
+                    <div class="profile-info">
+                        <img src="images/avatar/avatar2.webp" class="avatar">
+                        <div>
+                            <p id="user-email" class="fs-13 fw-medium mb-0">arunloganathan01@gmail.com</p>
+                            <p class="fs-13">Hi, Rohit</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex column-gap-2 border-bottom pb-3  ">
+                        <button class="btn btn-primary rounded-5 fs-13">Manage</button>
+                        <button class="btn remove rounded-5 fs-13">Remove</button>
+                    </div>
+
+                    <button class="add-account fs-13 fw-medium mt-3">+ Add another account</button>
+
+                    <div class="storage-box mb-3">
+                        <span>13 GB used of 15 GB</span>
+                        <div class="progressbar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex column-gap-2">
+                        <button class="btn btn-primary rounded-5 fs-13">Get storage</button>
+                        <button class="btn remove rounded-5 fs-13">Clean up space</button>
+                    </div>
+                </div>
+
+                <div class="tool-text">
+                    Profile
+
+                </div>
+
+            </div>
+            <div class="d-flex position-relative tool-hover">
+
+                <a class="d-flex btn btn-icon btn-action-gray rounded-circle waves-effect waves-light"
+                    data-bs-toggle="modal" data-bs-target="#setting">
+                    <span class="icon-setting"></span>
+                </a>
+                <div class="tool-text">
+                    Settings
+
+                </div>
+            </div>
+            <div class="d-flex tool-hover">
+                <a href="profile.html"
+                    class="d-flex btn btn-icon btn-action-gray rounded-circle waves-effect waves-light">
+                    <span class="icon-logout"></span>
+                </a>
+                <div class="tool-text">
+                    Log-Out
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

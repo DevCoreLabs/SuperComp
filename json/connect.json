@@ -1,0 +1,43 @@
+{
+    "title": "Connect",
+    "layout": "people_list",
+    "search": {
+        "type": "input",
+        "placeholder": "Search people"
+    },
+    "people": {
+        "type": "avatar_list",
+        "items": [
+            {
+                "name": "Rohit",
+                "avatar": "https://cdn.xyz.com/avatar/rohit.png",
+                "status": "online",
+                "unreadCount": 3
+            },
+            {
+                "name": "Manikandan",
+                "avatar": "https://cdn.xyz.com/avatar/manikandan.png",
+                "status": "offline",
+                "unreadCount": 0
+            },
+            {
+                "name": "Prithvi Raj",
+                "avatar": "https://cdn.xyz.com/avatar/prithvi.png",
+                "status": "offline",
+                "unreadCount": 5
+            },
+            {
+                "name": "Demo Logistics",
+                "avatar": "https://cdn.xyz.com/avatar/demo-logistics.png",
+                "status": "online",
+                "unreadCount": 1
+            },
+            {
+                "name": "Tharun",
+                "avatar": "https://cdn.xyz.com/avatar/tharun.png",
+                "status": "offline",
+                "unreadCount": 0
+            }
+        ]
+    }
+}

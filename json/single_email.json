@@ -1,0 +1,34 @@
+{
+    "email": {
+        "attachments": [],
+        "body_html": "<html> ...... </html>",
+        "cc": ["abc@gmail.com", "xyz@gmail.com"],
+        "bcc": ["pqr@gmail.com", "mno@gmail.com"],
+        "date": "2026-02-19T12:00:00Z",
+        "imageUrl": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+        "from": {
+            "email": "messages-noreply@linkedin.com",
+            "name": "LinkedIn"
+        },
+        "id": "19c74916b51cf3e6",
+        "labels": [
+            {
+                "color": "bg-secondary",
+                "name": "Misc",
+                "source": "custom"
+            }
+        ],
+        "read": true,
+        "service": "gmail",
+        "starred": false,
+        "subject": "1 profile view",
+        "time_text": "\u2014",
+        "to": [
+            {
+                "email": "arunloganathan01@gmail.com",
+                "name": "Arun Loganathan"
+            }
+        ]
+    },
+    "success": true
+}

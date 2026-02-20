@@ -1,0 +1,27 @@
+{
+    "title": "Ask AI",
+    "sections": [
+        {
+            "name": "conversation",
+            "type": "message_list",
+            "emptyState": "Ask anything about your emails, shipments, or tasks."
+        }
+    ],
+    "fields": {
+        "message": {
+            "type": "textarea",
+            "label": "Message",
+            "placeholder": "Type your message here",
+            "multiline": false
+        }
+    },
+    "actions": {
+        "primary": {
+            "type": "button",
+            "label": "Send",
+            "action": "send_message",
+            "style": "primary",
+            "icon": "send"
+        }
+    }
+}

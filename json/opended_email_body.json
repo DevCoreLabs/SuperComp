@@ -1,0 +1,72 @@
+{
+    "title": "Opened",
+    "summary": {
+      "count": 16,
+      "label": "Opened 16+ times"
+    },
+    "sections": [
+      {
+        "name": "opened_emails",
+        "type": "list_card",
+        "items": [
+          {
+            "id": "1",
+            "user": {
+              "name": "Lauren",
+              "device": "desktop"
+            },
+            "openedAt": "2023-11-13T10:25:00"
+          },
+          {
+            "id": "2",
+            "user": {
+              "name": "Srinivasan",
+              "device": "mobile"
+            },
+            "openedAt": "2023-11-15T12:15:00"
+          },
+          {
+            "id": "3",
+            "user": {
+              "name": "Magesh",
+              "device": "desktop"
+            },
+            "openedAt": "2023-11-15T07:01:00"
+          },
+          {
+            "id": "4",
+            "user": {
+              "name": "Srinivasan",
+              "device": "mobile"
+            },
+            "openedAt": "2023-11-14T18:15:00"
+          },
+          {
+            "id": "5",
+            "user": {
+              "name": "Lauren",
+              "device": "mobile"
+            },
+            "openedAt": "2023-11-14T11:32:00"
+          },
+          {
+            "id": "6",
+            "user": {
+              "name": "Lauren",
+              "device": "desktop"
+            },
+            "openedAt": "2023-11-13T10:30:00"
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "scrollable": true,
+      "maxHeight": 300,
+      "iconMap": {
+        "desktop": "monitor",
+        "mobile": "phone"
+      }
+    }
+  }
+  

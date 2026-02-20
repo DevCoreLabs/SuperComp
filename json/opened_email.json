@@ -1,0 +1,53 @@
+{
+    "title": "Opened emails",
+    "layout": "list",
+    "search": {
+        "type": "input",
+        "placeholder": "Search mail"
+    },
+    "emails": {
+        "type": "list",
+        "items": [
+            {
+                "date": "2025-11-09",
+                "emails": [
+                    {
+                        "from": "Kotak Privy League",
+                        "label": "Webinar",
+                        "subject": "Simplify GST Returns and Maximise Business Benefits"
+                    },
+                    {
+                        "from": "Amazon Business",
+                        "label": "Invoice",
+                        "subject": "Your monthly invoice is ready"
+                    }
+                ]
+            },
+            {
+                "date": "2025-11-08",
+                "emails": [
+                    {
+                        "from": "Flipkart Seller Hub",
+                        "label": "Support",
+                        "subject": "Ticket update for your request"
+                    }
+                ]
+            },
+            {
+                "date": "2025-11-07",
+                "emails": [
+                    {
+                        "from": "Google Workspace",
+                        "label": "Security",
+                        "subject": "New sign-in detected on your account"
+                    }
+                ]
+            }
+        ]
+    },
+    "settings": {
+        "scrollable": true,
+        "closeable": true,
+        "resizable": true
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "title": "Settings",
+    "sidebar": {
+        "sections": [
+            {
+                "label": "Account",
+                "items": [
+                    {
+                        "key": "edit_profile",
+                        "label": "Edit Profile",
+                        "icon": "user"
+                    },
+                    {
+                        "key": "signature",
+                        "label": "Signature",
+                        "icon": "pen"
+                    },
+                    {
+                        "key": "add_sub_user",
+                        "label": "Add sub-user",
+                        "icon": "user_plus",
+                        "active": true
+                    }
+                ]
+            },
+            {
+                "label": "Mail",
+                "items": [
+                    {
+                        "key": "automatic_replies",
+                        "label": "Automatic replies",
+                        "icon": "reply"
+                    }
+                ]
+            }
+        ]
+    },
+    "content": {
+        "title": "Add sub user",
+        "description": "Add another user to share account access securely.",
+        "fields": {
+            "name": {
+                "type": "text",
+                "label": "Name",
+                "placeholder": "Enter full name",
+                "required": true
+            },
+            "username": {
+                "type": "text",
+                "label": "Username",
+                "placeholder": "Enter username",
+                "required": true,
+                "validation": {
+                    "unique": true
+                }
+            },
+            "password": {
+                "type": "password",
+                "label": "Password",
+                "placeholder": "Enter password",
+                "required": true,
+                "visibilityToggle": true
+            },
+            "confirmPassword": {
+                "type": "password",
+                "label": "Re-confirm password",
+                "placeholder": "Re-enter password",
+                "required": true,
+                "visibilityToggle": true,
+                "validation": {
+                    "matchField": "password"
+                }
+            }
+        },
+        "actions": {
+            "primary": {
+                "type": "button",
+                "label": "Create sub user",
+                "action": "create_sub_user_and_pay",
+                "style": "primary"
+            },
+            "secondary": [
+                {
+                    "type": "button",
+                    "label": "Cancel",
+                    "action": "reset_form",
+                    "style": "outline"
+                }
+            ]
+        }
+    },
+    "settings": {
+        "closeable": true,
+        "scrollable": true,
+        "resizable": true
+    }
+}

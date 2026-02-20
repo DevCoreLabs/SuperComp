@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?w0jn3f');
+  src:  url('../fonts/icomoon.eot?w0jn3f#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?w0jn3f') format('truetype'),
+    url('../fonts/icomoon.woff?w0jn3f') format('woff'),
+    url('../fonts/icomoon.svg?w0jn3f#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-account:before {
+  content: "\e900";
+  /* color: #4784b6; */
+}
+.icon-add-user:before {
+  content: "\e901";
+}
+.icon-ai:before {
+  content: "\e902";
+}
+.icon-align_left_line:before {
+  content: "\e903";
+}
+.icon-align_right_line:before {
+  content: "\e904";
+}
+.icon-arrow:before {
+  content: "\e905";
+}
+.icon-arrow-send:before {
+  content: "\e906";
+}
+.icon-back-arrow:before {
+  content: "\e907";
+}
+.icon-bell:before {
+  content: "\e908";
+  /* color: #22c55e; */
+}
+.icon-bell-ring:before {
+  content: "\e909";
+}
+.icon-bold_line:before {
+  content: "\e90a";
+}
+.icon-brain:before {
+  content: "\e90b";
+}
+.icon-calendar-days:before {
+  content: "\e90c";
+}
+.icon-chat:before {
+  content: "\e90d";
+}
+.icon-circle-chevron-left:before {
+  content: "\e90e";
+}
+.icon-contact:before {
+  content: "\e90f";
+}
+.icon-delete:before {
+  content: "\e910";
+}
+.icon-double-arrow:before {
+  content: "\e911";
+}
+.icon-edit-pencil:before {
+  content: "\e912";
+}
+.icon-file:before {
+  content: "\e913";
+  /* color: #38bdf8; */
+}
+.icon-folder:before {
+  content: "\e914";
+  /* color: #94a3b8; */
+}
+.icon-font-weight:before {
+  content: "\e915";
+}
+.icon-image1:before {
+  content: "\e916";
+}
+.icon-image2:before {
+  content: "\e917";
+}
+.icon-inbox:before {
+  content: "\e918";
+  /* color: #4784b6; */
+}
+.icon-inbox-1:before {
+  content: "\e919";
+}
+.icon-indian-rupee:before {
+  content: "\e91a";
+  /* color: #a78bfa; */
+}
+.icon-information:before {
+  content: "\e91b";
+}
+.icon-italic_line:before {
+  content: "\e91c";
+}
+.icon-layers-2:before {
+  content: "\e91d";
+}
+.icon-layout-template:before {
+  content: "\e91e";
+}
+.icon-left-arrow:before {
+  content: "\e91f";
+}
+.icon-lightbulb:before {
+  content: "\e920";
+}
+.icon-link:before {
+  content: "\e921";
+}
+.icon-link_line:before {
+  content: "\e922";
+}
+.icon-list_check_line:before {
+  content: "\e923";
+}
+.icon-list_ordered_line:before {
+  content: "\e924";
+}
+.icon-logout:before {
+  content: "\e925";
+}
+.icon-maximize-2:before {
+  content: "\e926";
+}
+.icon-message-circle-warning:before {
+  content: "\e927";
+}
+.icon-minus:before {
+  content: "\e928";
+}
+.icon-package:before {
+  content: "\e929";
+}
+.icon-package-open:before {
+  content: "\e92a";
+}
+.icon-pen-line:before {
+  content: "\e92b";
+  color: #fff;
+}
+.icon-phone:before {
+  content: "\e92c";
+}
+.icon-pic_line:before {
+  content: "\e92d";
+}
+.icon-plus:before {
+  content: "\e92e";
+}
+.icon-profile:before {
+  content: "\e92f";
+}
+.icon-refresh:before {
+  content: "\e930";
+}
+.icon-right-arrow:before {
+  content: "\e931";
+}
+.icon-right-send-arrow:before {
+  content: "\e932";
+}
+.icon-send:before {
+  content: "\e933";
+}
+.icon-setting:before {
+  content: "\e934";
+}
+.icon-share:before {
+  content: "\e935";
+}
+.icon-share-2:before {
+  content: "\e936";
+}
+.icon-signature:before {
+  content: "\e937";
+}
+.icon-square-pen:before {
+  content: "\e938";
+}
+.icon-star:before {
+  content: "\e939";
+}
+.icon-star-1:before {
+  content: "\e93a";
+}
+.icon-strikethrough_line:before {
+  content: "\e93b";
+}
+.icon-tags:before {
+  content: "\e93c";
+}
+.icon-team:before {
+  content: "\e93d";
+}
+.icon-truck:before {
+  content: "\e93e";
+  /* color: #f97316; */
+}
+.icon-underline_line:before {
+  content: "\e93f";
+}
+.icon-video-call:before {
+  content: "\e940";
+}
+.icon-x:before {
+  content: "\e941";
+}

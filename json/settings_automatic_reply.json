@@ -1,0 +1,100 @@
+{
+    "title": "Settings",
+    "sidebar": {
+      "sections": [
+        {
+          "label": "Account",
+          "items": [
+            { "key": "edit_profile", "label": "Edit Profile", "icon": "user" },
+            { "key": "signature", "label": "Signature", "icon": "pen" },
+            { "key": "add_sub_user", "label": "Add sub-user", "icon": "user_plus" }
+          ]
+        },
+        {
+          "label": "Mail",
+          "items": [
+            {
+              "key": "automatic_replies",
+              "label": "Automatic replies",
+              "icon": "reply",
+              "active": true
+            }
+          ]
+        }
+      ]
+    },
+    "content": {
+      "title": "Automatic replies",
+      "description": "Auto-reply to keep contacts informed during your absence.",
+      "toggles": {
+        "enableAutoReply": {
+          "type": "checkbox",
+          "label": "Turn on Automatic replies",
+          "checked": false
+        },
+        "limitByTime": {
+          "type": "checkbox",
+          "label": "Send replies only during a time period",
+          "checked": false,
+          "dependsOn": "enableAutoReply"
+        }
+      },
+      "fields": {
+        "startTime": {
+          "type": "date_input",
+          "label": "Start time",
+          "placeholder": "dd/mm/yyyy",
+          "required": true,
+          "enabledWhen": "limitByTime"
+        },
+        "endTime": {
+          "type": "date_input",
+          "label": "End time",
+          "placeholder": "dd/mm/yyyy",
+          "required": true,
+          "enabledWhen": "limitByTime"
+        },
+        "autoReplyMessage": {
+          "type": "rich_text",
+          "label": "Auto-reply message",
+          "placeholder": "Enter your message here...",
+          "required": true,
+          "toolbar": [
+            "font",
+            "textSize",
+            "bold",
+            "italic",
+            "underline",
+            "strike",
+            "link",
+            "image",
+            "bulletList",
+            "numberList"
+          ],
+          "enabledWhen": "enableAutoReply"
+        }
+      },
+      "actions": {
+        "primary": {
+          "type": "button",
+          "label": "Save",
+          "action": "save_auto_reply",
+          "style": "primary"
+        },
+        "secondary": [
+          {
+            "type": "button",
+            "label": "Cancel",
+            "action": "reset_auto_reply",
+            "style": "outline"
+          }
+        ]
+      }
+    },
+    "settings": {
+      "closeable": true,
+      "scrollable": true,
+      "resizable": true
+    }
+  }
+  

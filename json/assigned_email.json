@@ -1,0 +1,98 @@
+{
+    "title": "Assign email",
+    "layout": "stacked",
+    "context": {
+        "currentlyAssignedTo": {
+            "label": "Currently assigned to:",
+            "name": "Rohit"
+        },
+        "user": {
+            "name": "Demo logics",
+            "email": "demologistics@gmail.com",
+            "avatar": "https://cdn.xyz.com/avatar/rohit.png"
+        }
+    },
+    "actions": {
+        "quickAssign": {
+            "type": "button",
+            "label": "Assign to myself",
+            "variant": "primary"
+        }
+    },
+    "search": {
+        "type": "input",
+        "placeholder": "Search team members..."
+    },
+    "teamMembers": {
+        "type": "card_list",
+        "items": [
+            {
+                "name": "Rohit",
+                "email": "manager@xyz.com",
+                "avatar": "https://cdn.xyz.com/avatar/rohit.png",
+                "actions": [
+                    {
+                        "type": "button",
+                        "label": "Assign",
+                        "variant": "secondary"
+                    }
+                ]
+            },
+            {
+                "name": "Manikandan",
+                "email": "maa-opshead@xyz.com",
+                "avatar": "https://cdn.xyz.com/avatar/manikandan.png",
+                "actions": [
+                    {
+                        "type": "button",
+                        "label": "Assign",
+                        "variant": "secondary"
+                    }
+                ]
+            },
+            {
+                "name": "Prithvi raj",
+                "email": "sales@xyz.com",
+                "avatar": "https://cdn.xyz.com/avatar/prithvi.png",
+                "actions": [
+                    {
+                        "type": "button",
+                        "label": "Assign",
+                        "variant": "secondary"
+                    }
+                ]
+            }
+        ]
+    },
+    "assignedEmails": {
+        "title": "Assigned emails",
+        "groupBy": "date",
+        "items": [
+            {
+                "date": "2025-11-09",
+                "emails": [
+                    {
+                        "from": "Kotak Privy League",
+                        "label": "Webinar",
+                        "subject": "Simplify GST Returns and Maximise Business Benefits"
+                    },
+                    {
+                        "from": "Amazon Business",
+                        "label": "Invoice",
+                        "subject": "Your monthly invoice is ready"
+                    }
+                ]
+            },
+            {
+                "date": "2025-11-08",
+                "emails": [
+                    {
+                        "from": "Flipkart Seller Hub",
+                        "label": "Support",
+                        "subject": "Ticket update for your request"
+                    }
+                ]
+            }
+        ]
+    }
+}

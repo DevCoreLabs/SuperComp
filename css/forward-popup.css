@@ -1,0 +1,298 @@
+/* Forward Message Popup Styles */
+.forward-popup {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    /* height: 500px; */
+    max-height: 550px;
+    min-height: 350px;
+    /* Maintain fixed height to prevent footer shift when toolbar opens */
+    background: #ffffff;
+    /* border: 1px solid rgba(0, 0, 0, 0.15); */
+    /* border-radius: 8px; */
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+    z-index: 1001;
+    display: none;
+    flex-direction: column;
+    overflow: visible;
+    /* Changed to visible to allow dropdowns */
+}
+
+.forward-popup.show {
+    display: flex;
+}
+
+/* Header */
+.forward-header {
+    display: flex;
+    /* align-items: flex-start; */
+    /* Changed from center to support multi-row */
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    height: auto;
+    /* Changed from 48px */
+    /* min-height: 48px; */
+    background: #ffffff;
+    border-top-left-radius: 8px;
+    /* Maintain rounded corners */
+    border-top-right-radius: 8px;
+}
+
+.forward-header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 12px;
+}
+
+.forward-to-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.forward-to-input,
+.forward-cc-input,
+.forward-bcc-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.800000011920929);
+    padding: 4px 0;
+    background: transparent;
+}
+
+.forward-to-input::placeholder,
+.forward-cc-input::placeholder,
+.forward-bcc-input::placeholder {
+    color: transparent;
+    /* Hide placeholders to match Gmail usually, or keep them */
+}
+
+/* Specific field containers */
+.forward-cc-field,
+.forward-bcc-field {
+    width: 100%;
+    display: none;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.forward-cc-field.show-field,
+.forward-bcc-field.show-field {
+    display: flex;
+}
+
+.forward-header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.forward-toggle-text {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.800000011920929);
+    cursor: pointer;
+    user-select: none;
+}
+
+.forward-popout-btn {
+    color: rgba(0, 0, 0, 0.800000011920929);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forward-popout-btn:hover {
+    background-color: rgba(60, 64, 67, .08);
+}
+
+/* Body / Editor Area */
+.forward-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.forward-editor {
+    outline: none;
+    font-size: 14px;
+    line-height: normal;
+    color: rgba(0, 0, 0, 0.800000011920929);
+    min-height: 150px;
+    word-break: break-word;
+}
+
+/* Forwarded Message Block */
+.forwarded-block {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    font-family: monospace;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.800000011920929);
+    white-space: pre-wrap;
+}
+
+.forwarded-block .header-line {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 16px 0;
+    display: block;
+}
+
+.forwarded-block-title {
+    margin-bottom: 8px;
+}
+
+.forwarded-meta {
+    margin-bottom: 4px;
+}
+
+.forwarded-meta b {
+    font-weight: 700;
+}
+
+
+
+.forward-footer-left {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-send-group {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.btn-send {
+    background-color: #4784B6;
+    color: #ffffff;
+    border: none;
+    border-radius: 18px 0 0 18px;
+    padding: 0 16px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn-send:hover {
+    background-color: #4784B6;
+    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, .30), 0 4px 8px 3px rgba(60, 64, 67, .15);
+}
+
+.btn-send-options {
+    background-color: #4784B6;
+    color: #ffffff;
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0 18px 18px 0;
+    width: 24px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-send-options i {
+    font-size: 12px;
+}
+
+.forward-toolbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.btn-toolbar-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.800000011920929);
+    ;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    transition: background 0.1s;
+}
+
+.btn-toolbar-icon:hover {
+    background-color: rgba(60, 64, 67, .08);
+    color: rgba(0, 0, 0, 0.800000011920929);
+    ;
+}
+
+.btn-toolbar-icon i {
+    font-size: 18px;
+}
+
+.forward-footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn-discard {
+    color: rgba(0, 0, 0, 0.800000011920929);
+    ;
+}
+
+/* Responsive */
+@media (max-width: 1480px) {
+    .forward-popup {
+        left: 0;
+        transform: none;
+        width: 100%;
+        border-right: none;
+        border-left: none;
+    }
+}
+
+/* Cc/Bcc scroll behavior */
+.forward-popup-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Allow the header's dropdown to render outside the clipped area.
+   overflow:visible lets the dropdown escape the overflow:hidden boundary. */
+.forward-header {
+    overflow: visible;
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+/* The footer also needs to allow its schedule-send dropdown to pop upward */
+.forward-footer {
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+/* Ensure the type-switcher dropdown menu is always on top */
+.forward-type-dropdown .dropdown-menu {
+    z-index: 1050;
+}
+
+/* Schedule-send dropdown in forward footer pops upward */
+.forward-footer .compose-send-dropdown-menu {
+    bottom: 100%;
+    top: auto;
+    margin-bottom: 4px;
+}

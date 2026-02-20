@@ -1,0 +1,104 @@
+{
+    "title": "Settings",
+    "sidebar": {
+        "sections": [
+            {
+                "label": "Account",
+                "items": [
+                    {
+                        "key": "edit_profile",
+                        "label": "Edit Profile",
+                        "icon": "user"
+                    },
+                    {
+                        "key": "signature",
+                        "label": "Signature",
+                        "icon": "pen",
+                        "active": true
+                    },
+                    {
+                        "key": "add_sub_user",
+                        "label": "Add sub-user",
+                        "icon": "user_plus"
+                    }
+                ]
+            },
+            {
+                "label": "Mail",
+                "items": [
+                    {
+                        "key": "automatic_replies",
+                        "label": "Automatic replies",
+                        "icon": "reply"
+                    }
+                ]
+            }
+        ]
+    },
+    "content": {
+        "title": "Signature",
+        "headerActions": [
+            {
+                "type": "button",
+                "label": "New signature",
+                "icon": "plus",
+                "action": "create_signature",
+                "style": "outline"
+            },
+            {
+                "type": "icon_button",
+                "icon": "copy",
+                "action": "duplicate_signature"
+            },
+            {
+                "type": "icon_button",
+                "icon": "delete",
+                "action": "delete_signature"
+            }
+        ],
+        "fields": {
+            "signatureSelector": {
+                "type": "dropdown",
+                "label": "Signature",
+                "placeholder": "Select signature",
+                "required": true
+            },
+            "signatureBody": {
+                "type": "rich_text",
+                "label": "Signature content",
+                "placeholder": "Enter your message here...",
+                "required": true,
+                "toolbar": [
+                    "font",
+                    "textSize",
+                    "bold",
+                    "italic",
+                    "underline",
+                    "strike",
+                    "link",
+                    "image",
+                    "bulletList",
+                    "numberList"
+                ]
+            },
+            "includeAI": {
+                "type": "checkbox",
+                "label": "Include sent via SuperComp AI",
+                "required": true
+            }
+        },
+        "actions": {
+            "primary": {
+                "type": "button",
+                "label": "Save",
+                "action": "save_signature",
+                "style": "primary"
+            }
+        }
+    },
+    "settings": {
+        "closeable": true,
+        "scrollable": true,
+        "resizable": true
+    }
+}

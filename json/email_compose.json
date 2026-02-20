@@ -1,0 +1,53 @@
+{
+    "title": "New Message",
+    "fields": {
+        "to": {
+            "type": "recipient",
+            "label": "To",
+            "placeholder": "Add recipients",
+            "value": "",
+            "required": true
+        },
+        "cc": {
+            "type": "recipient",
+            "label": "Cc",
+            "placeholder": "Add Cc",
+            "visible": true
+        },
+        "bcc": {
+            "type": "recipient",
+            "label": "Bcc",
+            "placeholder": "Add Bcc",
+            "visible": true
+        },
+        "subject": {
+            "type": "text",
+            "label": "Subject",
+            "placeholder": "Subject",
+            "value": ""
+        },
+        "body": {
+            "type": "textarea",
+            "label": "Message",
+            "placeholder": "Write your message here...",
+            "value": ""
+        }
+    },
+    "actions": {
+        "primary": {
+            "type": "button",
+            "label": "Send",
+            "action": "send_email",
+            "style": "primary",
+            "icon": "send"
+        },
+        "secondary": [
+            {
+                "type": "button",
+                "label": "Schedule send",
+                "action": "schedule_send",
+                "icon": "schedule"
+            }
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "title": "Pick date and time",
+    "fields": {
+        "selectedDate": {
+            "type": "date",
+            "label": "Select a date",
+            "placeholder": "DD/MM/YYYY",
+            "required": true,
+            "format": "DD/MM/YYYY"
+        },
+        "selectedTime": {
+            "type": "time",
+            "label": "Select a time",
+            "placeholder": "Select time",
+            "required": true,
+            "options": [
+                "09:00 AM",
+                "10:00 AM",
+                "11:00 AM",
+                "12:00 PM",
+                "01:00 PM",
+                "02:00 PM",
+                "03:00 PM",
+                "04:00 PM",
+                "05:00 PM"
+            ]
+        }
+    },
+    "actions": {
+        "primary": {
+            "type": "button",
+            "label": "Confirm",
+            "action": "confirm_datetime",
+            "style": "primary"
+        },
+        "secondary": [
+            {
+                "type": "button",
+                "label": "Cancel",
+                "action": "close_modal",
+                "style": "outline"
+            }
+        ]
+    },
+    "settings": {
+        "closeable": true,
+        "dismissOnOutsideClick": true
+    }
+}

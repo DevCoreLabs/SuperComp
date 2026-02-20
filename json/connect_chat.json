@@ -1,0 +1,47 @@
+{
+    "title": "Connect",
+    "layout": "chat_only",
+    "header": {
+        "participant": {
+            "id": "u_002",
+            "name": "Rohit",
+            "avatar": "https://cdn.xyz.com/avatar/rohit.png",
+            "status": "online"
+        }
+    },
+    "messages": [
+        {
+            "id": "m_001",
+            "sender": {
+                "id": "u_002",
+                "name": "Tharun"
+            },
+            "text": "Hi tharun!!",
+            "timestamp": "2025-11-09T23:59:00",
+            "timeLabel": "11:59 PM",
+            "direction": "incoming",
+            "status": "read"
+        },
+        {
+            "id": "m_002",
+            "sender": {
+                "id": "u_001",
+                "name": "Rohit"
+            },
+            "text": "Hey Rohit!",
+            "timestamp": "2025-11-10T00:01:00",
+            "timeLabel": "12:01 AM",
+            "direction": "outgoing",
+            "status": "sent"
+        }
+    ],
+    "composer": {
+        "type": "input",
+        "placeholder": "Type your message here",
+        "sendButton": {
+            "type": "button",
+            "label": "Send",
+            "variant": "primary"
+        }
+    }
+}

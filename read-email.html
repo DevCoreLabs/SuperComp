@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <!-- begin:: Website Page Title -->
+  <title>SuperComp.AI</title>
+  <!-- end:: Website Page Title -->
+
+  <!-- begin:: Mobile Specific -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- end:: Mobile Specific -->
+
+  <!-- begin:: Favicon Tags -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- end:: Favicon Tags -->
+
+  <!-- begin:: Required Stylesheet -->
+  <link rel="stylesheet" href="libs/flaticon/css/all/all.css">
+  <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="libs/simplebar/simplebar.css">
+  <!-- <link rel="stylesheet" href="libs/bootstrap-select/css/bootstrap-select.min.css"> -->
+  <!-- end:: Required Stylesheet -->
+
+  <!-- begin:: CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/rte-editor.css">
+  <link rel="stylesheet" href="css/forward-popup.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <!-- <link rel="stylesheet" href="css/search-dropdown.css"> -->
+
+</head>
+
+<body>
+  <div class="page-layout">
+
+    <header class="app-header" id="appHeader">
+      <!-- Loaded dynamically via layout.js -->
+    </header>
+
+    <!-- begin:: Sidebar Menu -->
+    <aside class="app-menubar" id="appMenubar">
+      <!-- Loaded dynamically via layout.js -->
+    </aside>
+    <!-- end:: Sidebar Menu -->
+
+    <main class="d-flex app-wrapper px-3 ps-xl-0 pe-xxl-0 column-gap-3" id="read-email">
+      <div class="card card-body overflow-hidden mail-wrapper p-0">
+        <div class="sidebar-mobile-overlay"></div>
+        <div class="mail-body">
+          <div class="d-sm-flex align-items-center justify-content-between">
+            <div class="d-flex  px-3 py-2 align-items-center gap-2 ">
+              <a href="inbox.html" class="bg-transparent border-0  me-2">
+                <span class="icon-arrow d-flex align-items-center"></span>
+              </a>
+              <button class="bg-transparent border-0 me-2 p-0">
+                <span class="icon-information d-flex align-items-center"></span>
+              </button>
+              <button class="bg-transparent border-0 me-2 p-0">
+                <span class="icon-delete d-flex align-items-center"></span>
+              </button>
+            </div>
+            <div class="mail-header">
+              <button
+                class="btn bg-dark-subtle btn-white btn-shadow btn-icon waves-effect mail-sidebar-toggler d-lg-none">
+                <i class="fi fi-rs-list d-flex align-items-center"></i>
+              </button>
+              <div class="d-flex align-items-center gap-3">
+                <span>1 - 50 of 570</span>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                    <span class="icon-left-arrow "></span>
+                  </button>
+                  <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                    <span class="icon-right-arrow"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-sm-4 pt-sm-4 px-3 pt-3">
+            <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between mb-4">
+              <h4 class="mb-0 ps-40px mail-title"></h4>
+              <div class="d-flex align-items-center column-gap-3">
+                <small></small>
+                <a class="mail-item-bookmark" href="javascript:void();">
+                  <i class="fi fi-rr-star"></i>
+                </a>
+                <a href="#" id="header-reply-btn">
+                  <span class="icon-share"></span>
+                </a>
+                <!-- <a href="#">
+                  <span class="icon-package-open"></span>
+                </a> -->
+                <div class="position-relative d-inline-block">
+                  <a href="#" id="openIcon" class="icon-btn">
+                    <span class="icon-package-open"></span>
+                  </a>
+
+                  <!-- Dropdown -->
+                  <div id="openDropdown" class="custom-dropdown shadow p-3 rounded-4">
+                    <h6 class="mb-2">Opened 16+ times</h6>
+                    <div class="mt-3">
+                      <ul class="p-0 gap-3 d-flex flex-column">
+                        <li class="d-flex align-items-center justify-content-between">
+                          <p class="fs-13 mb-0">
+                            <span class="icon-image1 w-20px me-2"></span>Lauren
+                          </p>
+                          <small>Nov 13, 10:25 AM </small>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-between">
+                          <p class="fs-13 mb-0">
+                            <span class="icon-image2 w-20px me-2"></span>Srinivasan
+                          </p>
+                          <small>Nov 15, 12:15 PM </small>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-between">
+                          <p class="fs-13 mb-0">
+                            <span class="icon-image1 w-20px me-2"></span>Magesh
+                          </p>
+                          <small>Nov 15, 07:01 AM </small>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-between">
+                          <p class="fs-13 mb-0">
+                            <span class="icon-image1 w-20px me-2"></span>Srinivasan
+                          </p>
+                          <small>Nov 14, 06:15 PM </small>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-between">
+                          <p class="fs-13 mb-0">
+                            <span class="icon-image2 w-20px me-2"></span>Lauren
+                          </p>
+                          <small>Nov 14, 11:32 AM </small>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-between">
+                          <p class="fs-13 mb-0">
+                            <span class="icon-image1 w-20px me-2"></span>Lauren
+                          </p>
+                          <small>Nov 13, 10:30 AM </small>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div class="avatar avatar-sm bg-danger text-danger bg-opacity-10 rounded-circle fw-bold">D</div>
+              <div class="clearfix d-flex flex-column row-gap-1">
+                <div class="d-flex flex-wrap align-items-center text-sm">
+                  <h6 class="mb-0 me-2 mail-user"></h6>
+                  <a href="javascript:void(0);" class="text-1xs"></a>
+                </div>
+                <div class="d-flex flex-wrap text-1xs position-relative" id="email-details-container">
+                  <div class="d-flex align-items-center">
+                    <span class="text-gray me-1">to:</span>
+                    <span class="text-dark fw-medium me-1">me</span>
+                    <a href="javascript:void(0);" class="text-gray details-toggle" id="detailsToggle">
+                      <i class="fi fi-rr-caret-down"></i>
+                    </a>
+                  </div>
+
+                  <!-- Email Details Dropdown -->
+                  <div class="email-details-dropdown rounded-3 bg-white d-none overflow-hidden" id="detailsDropdown"
+                    style="position: absolute; top: 100%; left: 0; z-index: 1050; min-width: 400px; border: 1px solid #eee;">
+                    <table class="table table-borderless table-sm mb-0 fs-12">
+                      <tbody id="detailsBody">
+                        <!-- Populated dynamic -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mail-read-container">
+            <div class="mail-read-wrapper" data-simplebar>
+              <div class="mail-read-body text-dark p-sm-4 p-3"></div>
+            </div>
+          </div>
+          <div class="mail-read-bottom-bar row-gap-2">
+            <div class="left-actions">
+              <button class="btn btn-primary d-flex align-items-center gap-2 px-4 rounded-5" id="gmail-reply-all-btn">
+                <span class="icon-double-arrow"></span>
+                Reply All
+              </button>
+              <button class="btn btn-secondary d-flex align-items-center gap-2 px-4 rounded-5" id="gmail-reply-btn">
+                <span class="icon-back-arrow"></span>
+                Reply
+              </button>
+              <button class="btn btn-secondary d-flex align-items-center gap-2 px-4 rounded-5" id="forward-email-btn">
+                Forward
+                <span class="icon-right-send-arrow"></span>
+              </button>
+              <button class="btn-reaction-trigger" title="Add reaction">
+                <i class="fi fi-rr-smile"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Forward Message Popup -->
+          <div class="forward-popup">
+            <div class="forward-popup-inner">
+              <div class="forward-header align-items-start h-auto py-2">
+                <div class="forward-header-left ">
+                  <div class="dropdown forward-type-dropdown">
+                    <button class="btn btn-link text-decoration-none p-0 d-flex align-items-center gap-1 text-secondary"
+                      type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #5f6368;">
+                      <i class="icon-right-send-arrow "></i>
+                      <i class="fi fi-rr-caret-down" style="font-size: 10px;"></i>
+                    </button>
+                    <ul class="dropdown-menu shadow border-0" style="font-size: 14px;">
+                      <li><a class="dropdown-item d-flex align-items-center gap-2" href="#" data-type="reply"><i
+                            class="fi fi-rr-undo"></i> Reply</a></li>
+                      <li><a class="dropdown-item d-flex align-items-center gap-2" href="#" data-type="forward"><i
+                            class="icon-right-send-arrow"></i> Forward</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="forward-recipients-wrapper flex-grow-1 d-flex flex-column ms-2">
+                  <div class="forward-to-row d-flex align-items-center ">
+                    <span class="me-2" style="font-size: 14px;">To</span>
+                    <div class="flex-grow-1">
+                      <input type="email" class="forward-to-input border-0 w-100 p-0" placeholder=""
+                        style="outline: none; box-shadow: none;">
+                    </div>
+                    <div class="forward-cc-bcc-triggers ms-auto d-flex gap-3">
+                      <span class="forward-toggle-text forward-cc-toggle cursor-pointer">Cc</span>
+                      <span class="forward-toggle-text forward-bcc-toggle cursor-pointer">Bcc</span>
+                    </div>
+                  </div>
+
+                  <!-- Hidden CC Field -->
+                  <div class="forward-cc-field">
+                    <span class="me-2" style="font-size: 14px;">Cc</span>
+                    <input type="email" class="forward-cc-input border-0 flex-grow-1 p-0" placeholder=""
+                      style="outline: none; box-shadow: none;">
+                  </div>
+
+                  <!-- Hidden BCC Field -->
+                  <div class="forward-bcc-field">
+                    <span class="me-2" style="font-size: 14px;">Bcc</span>
+                    <input type="email" class="forward-bcc-input border-0 flex-grow-1 p-0" placeholder=""
+                      style="outline: none; box-shadow: none;">
+                  </div>
+                </div>
+
+                <!-- <div class="forward-header-right align-self-start pt-1 ms-2">
+                  <div class="forward-popout-btn">
+                    <span class="icon-maximize-2" style="font-size: 14px;"></span>
+                  </div>
+                </div> -->
+              </div>
+              <div class="forward-body scroll">
+                <div class="forward-editor" contenteditable="true"><br></div>
+                <div class="forwarded-block">
+                  <!-- Content injected via JS -->
+                </div>
+              </div>
+              <div class="attachment-list-wrapper px-3 border-top d-none">
+                <div class="attachment-list d-flex flex-wrap gap-2 py-2"></div>
+              </div>
+              <div class="forward-footer">
+                <div class="compose-popup-footer">
+                  <div class="formatting-toolbar">
+                    <div class="d-flex gap-1 align-items-center">
+                      <div class="rte-toolbar-group">
+                        <button type="button" class="btn btn-sm btn-icon" data-command="undo" title="Undo">
+                          <i class="fi fi-rr-undo"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon" data-command="redo" title="Redo">
+                          <i class="fi fi-rr-redo"></i>
+                        </button>
+                      </div>
+
+                      <div class="rte-toolbar-group">
+                        <select class="btn btn-sm" data-command="fontName" title="Font">
+                          <option value="Arial" style="font-family: Arial;">Sans Serif</option>
+                          <option value="Serif" style="font-family: serif;">Serif</option>
+                          <option value="Fixedsys" style="font-family: monospace;">Fixed Width</option>
+                          <option value="Wide" style="font-family: 'Arial Black';">Wide</option>
+                          <option value="Narrow" style="font-family: 'Arial Narrow';">Narrow</option>
+                          <option value="Comic Sans MS" style="font-family: 'Comic Sans MS';">Comic Sans MS</option>
+                          <option value="Garamond" style="font-family: Garamond;">Garamond</option>
+                          <option value="Georgia" style="font-family: Georgia;">Georgia</option>
+                          <option value="Tahoma" style="font-family: Tahoma;">Tahoma</option>
+                          <option value="Trebuchet MS" style="font-family: 'Trebuchet MS';">Trebuchet MS</option>
+                          <option value="Verdana" style="font-family: Verdana;">Verdana</option>
+                        </select>
+                      </div>
+
+                      <div class="rte-toolbar-group">
+                        <select class="btn btn-sm" data-command="fontSize" title="Size">
+                          <option value="1">Small</option>
+                          <option value="3" selected="">Normal</option>
+                          <option value="5">Large</option>
+                          <option value="7">Huge</option>
+                        </select>
+                      </div>
+
+                      <div class="rte-toolbar-group">
+                        <button type="button" class="btn btn-sm btn-icon" data-command="bold" title="Bold">
+                          <span class="icon-bold_line d-flex "></span>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon" data-command="italic" title="Italic">
+                          <span class="icon-italic_line d-flex "></span>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon" data-command="underline" title="Underline">
+                          <span class="icon-underline_line d-flex "></span></button>
+                      </div>
+
+                      <div class="rte-toolbar-group">
+                        <button type="button" class="btn btn-sm btn-icon" data-command="justifyLeft"
+                          title="Align Left"><i class="fi fi-rr-align-left d-flex"></i></button>
+                        <button type="button" class="btn btn-sm btn-icon" data-command="justifyCenter"
+                          title="Align Center"><i class="fi fi-rr-align-center d-flex"></i></button>
+                        <button type="button" class="btn btn-sm btn-icon" data-command="justifyRight"
+                          title="Align Right">
+                          <span class="icon-align_right_line d-flex"></span>
+                        </button>
+                      </div>
+
+                      <div class="rte-toolbar-group">
+                        <button type="button" class="btn btn-sm btn-icon" data-command="insertUnorderedList"
+                          title="Bullet List">
+                          <span class="icon-list_check_line d-flex"></span>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon" data-command="insertOrderedList"
+                          title="Numbered List">
+                          <span class="icon-list_ordered_line d-flex"></span>
+                        </button>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="compose-toolbar d-flex justify-content-between align-items-center ">
+                    <div class="d-flex gap-2 align-items-center">
+                      <div class="d-flex gap-0 position-relative">
+                        <button type="submit" class="btn compose-send-btn">
+                          Send
+                        </button>
+                        <button type="button" class="btn compose-send-dropdown" title="Send options"
+                          id="forward-send-dropdown-toggle">
+                          <i class="fi fi-rr-angle-down d-flex align-items-center"></i>
+                        </button>
+                        <!-- --- NEW: Schedule Send Dropdown --- -->
+                        <div class="compose-send-dropdown-menu shadow rounded-2 d-none" id="forward-send-dropdown-menu">
+                          <div class="dropdown-item py-2 px-3 d-flex align-items-center gap-2 open-schedule-modal">
+                            <i class="fi fi-rr-time-past"></i>
+                            <span>Schedule send</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="compose-formatting-icons d-flex gap-2">
+                        <button type="button" class="btn btn-sm btn-icon" title="Text formatting">
+                          <i class="fi fi-rr-text"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon" title="Insert link">
+                          <i class="fi fi-rr-link"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-sm btn-icon" title="Attach file">
+                          <i class="fi fi-rr-file"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon" title="Insert image">
+                          <i class="fi fi-rr-picture"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon" title="Insert from Drive">
+                          <i class="fi fi-rr-cloud"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-icon" title="Security options">
+                          <i class="fi fi-rr-lock"></i>
+                        </button>
+                        <div class="position-relative d-inline-block">
+                          <button type="button" class="btn btn-sm btn-icon btn-signature" title="Insert signature">
+                            <i class="fi fi-rr-signature"></i>
+                          </button>
+                          <div class="signature-dropdown-menu shadow rounded-2 d-none">
+                            <div class="dropdown-item py-2 px-3 d-flex align-items-center gap-2 sig-item"
+                              data-sig="none">
+                              <i class="fi fi-rr-check text-dark sig-check opacity-0"></i>
+                              <span>No signature</span>
+                            </div>
+                            <div class="dropdown-item py-2 px-3 d-flex align-items-center gap-2 sig-item"
+                              data-sig="Arun">
+                              <i class="fi fi-rr-check text-dark sig-check opacity-0"></i>
+                              <span>Arun</span>
+                            </div>
+                            <div class="dropdown-item py-2 px-3 d-flex align-items-center gap-2 sig-item"
+                              data-sig="Arun CEO">
+                              <i class="fi fi-rr-check text-dark sig-check opacity-0"></i>
+                              <span>Arun CEO</span>
+                            </div>
+                            <div class="dropdown-divider my-1"></div>
+                            <div class="dropdown-item py-2 px-3 d-flex align-items-center gap-2 manage-signatures">
+                              <i class="fi fi-rr-edit text-muted" style="width: 20px; text-align: center;"></i>
+                              <span>Manage signatures</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-icon compose-trash-btn" title="Delete">
+                      <i class="fi fi-rr-trash"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gmail Style Reply UI -->
+          <div class="gmail-reply-wrapper" id="gmail-reply-editor">
+            <div class="gmail-reply-header">
+              <div class="gmail-reply-recipients">
+                <div class="gmail-reply-to-field">
+                  <span class="field-label">To:</span>
+                  <span class="field-value" id="reply-to-value"></span>
+                </div>
+                <div class="gmail-reply-cc-field d-none">
+                  <span class="field-label">Cc:</span>
+                  <span class="field-value" id="reply-cc-value"></span>
+                </div>
+                <div class="gmail-reply-bcc-field d-none">
+                  <span class="field-label">Bcc:</span>
+                  <span class="field-value" id="reply-bcc-value"></span>
+                </div>
+              </div>
+            </div>
+            <div class="confidential-banner-wrapper d-none"></div>
+            <div class="gmail-reply-content" contenteditable="true" id="gmail-reply-body"></div>
+            <div class="attachment-list-wrapper px-3 border-top d-none">
+              <div class="attachment-list d-flex flex-wrap gap-2 py-2"></div>
+            </div>
+            <div class="gmail-reply-toolbar">
+              <div class="compose-popup-footer">
+                <div class="formatting-toolbar">
+                  <div class="d-flex gap-1 align-items-center">
+                    <div class="rte-toolbar-group">
+                      <button type="button" class="btn btn-sm btn-icon" data-command="undo" title="Undo">
+                        <i class="fi fi-rr-undo"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-icon" data-command="redo" title="Redo">
+                        <i class="fi fi-rr-redo"></i>
+                      </button>
+                    </div>
+
+                    <!-- <div class="vr mx-1"></div> -->
+                    <div class="rte-toolbar-group">
+                      <select class="btn btn-sm" data-command="fontName" title="Font">
+                        <option value="Arial" style="font-family: Arial;">Sans Serif</option>
+                        <option value="Serif" style="font-family: serif;">Serif</option>
+                        <option value="Fixedsys" style="font-family: monospace;">Fixed Width</option>
+                        <option value="Wide" style="font-family: 'Arial Black';">Wide</option>
+                        <option value="Narrow" style="font-family: 'Arial Narrow';">Narrow</option>
+                        <option value="Comic Sans MS" style="font-family: 'Comic Sans MS';">Comic Sans MS</option>
+                        <option value="Garamond" style="font-family: Garamond;">Garamond</option>
+                        <option value="Georgia" style="font-family: Georgia;">Georgia</option>
+                        <option value="Tahoma" style="font-family: Tahoma;">Tahoma</option>
+                        <option value="Trebuchet MS" style="font-family: 'Trebuchet MS';">Trebuchet MS</option>
+                        <option value="Verdana" style="font-family: Verdana;">Verdana</option>
+                      </select>
+                    </div>
+
+                    <div class="rte-toolbar-group">
+                      <select class="btn btn-sm" data-command="fontSize" title="Size">
+                        <option value="1">Small</option>
+                        <option value="3" selected="">Normal</option>
+                        <option value="5">Large</option>
+                        <option value="7">Huge</option>
+                      </select>
+                    </div>
+
+                    <div class="rte-toolbar-group">
+                      <button type="button" class="btn btn-sm btn-icon" data-command="bold" title="Bold">
+                        <span class="icon-bold_line d-flex "></span>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-icon" data-command="italic" title="Italic">
+                        <span class="icon-italic_line d-flex "></span>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-icon" data-command="underline" title="Underline">
+                        <span class="icon-underline_line d-flex "></span></button>
+                    </div>
+
+                    <div class="rte-toolbar-group">
+                      <button type="button" class="btn btn-sm btn-icon" data-command="justifyLeft" title="Align Left"><i
+                          class="fi fi-rr-align-left d-flex"></i></button>
+                      <button type="button" class="btn btn-sm btn-icon" data-command="justifyCenter"
+                        title="Align Center"><i class="fi fi-rr-align-center d-flex"></i></button>
+                      <button type="button" class="btn btn-sm btn-icon" data-command="justifyRight" title="Align Right">
+                        <span class="icon-align_right_line d-flex"></span>
+                      </button>
+                    </div>
+
+                    <div class="rte-toolbar-group">
+                      <button type="button" class="btn btn-sm btn-icon" data-command="insertUnorderedList"
+                        title="Bullet List">
+                        <span class="icon-list_check_line d-flex"></span>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-icon" data-command="insertOrderedList"
+                        title="Numbered List">
+                        <span class="icon-list_ordered_line d-flex"></span>
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="compose-toolbar d-flex justify-content-between align-items-center ">
+                  <div class="d-flex gap-2 align-items-center">
+                    <div class="d-flex gap-0 position-relative">
+                      <button type="submit" class="btn compose-send-btn">
+                        Send
+                      </button>
+                      <button type="button" class="btn compose-send-dropdown" title="Send options"
+                        id="reply-send-dropdown-toggle">
+                        <i class="fi fi-rr-angle-down d-flex align-items-center"></i>
+                      </button>
+                      <!-- --- NEW: Schedule Send Dropdown --- -->
+                      <div class="compose-send-dropdown-menu shadow rounded-2 d-none" id="reply-send-dropdown-menu">
+                        <div class="dropdown-item py-2 px-3 d-flex align-items-center gap-2 open-schedule-modal">
+                          <i class="fi fi-rr-time-past"></i>
+                          <span>Schedule send</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="compose-formatting-icons d-flex gap-2">
+                      <button type="button" class="btn btn-sm btn-icon" title="Text formatting">
+                        <i class="fi fi-rr-text"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-icon" title="Insert link">
+                        <i class="fi fi-rr-link"></i>
+                      </button>
+
+                      <button type="button" class="btn btn-sm btn-icon" title="Attach file">
+                        <i class="fi fi-rr-file"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-icon" title="Insert image">
+                        <i class="fi fi-rr-picture"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-icon" title="Insert from Drive">
+                        <i class="fi fi-rr-cloud"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-icon" title="Security options">
+                        <i class="fi fi-rr-lock"></i>
+                      </button>
+                      <div class="position-relative d-inline-block">
+                        <button type="button" class="btn btn-sm btn-icon btn-signature" title="Insert signature">
+                          <i class="fi fi-rr-signature"></i>
+                        </button>
+                        <div class="signature-dropdown-menu shadow rounded-2 d-none">
+                          <div class="dropdown-item py-2 px-3 d-flex align-items-center gap-2 sig-item" data-sig="none">
+                            <i class="fi fi-rr-check text-dark sig-check opacity-0"></i>
+                            <span>No signature</span>
+                          </div>
+                          <div class="dropdown-item py-2 px-3 d-flex align-items-center gap-2 sig-item" data-sig="Arun">
+                            <i class="fi fi-rr-check text-dark sig-check opacity-0"></i>
+                            <span>Arun</span>
+                          </div>
+                          <div class="dropdown-item py-2 px-3 d-flex align-items-center gap-2 sig-item"
+                            data-sig="Arun CEO">
+                            <i class="fi fi-rr-check text-dark sig-check opacity-0"></i>
+                            <span>Arun CEO</span>
+                          </div>
+                          <div class="dropdown-divider my-1"></div>
+                          <div class="dropdown-item py-2 px-3 d-flex align-items-center gap-2 manage-signatures">
+                            <i class="fi fi-rr-edit text-muted" style="width: 20px; text-align: center;"></i>
+                            <span>Manage signatures</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-sm btn-icon compose-trash-btn" title="Delete">
+                    <i class="fi fi-rr-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Modals Placeholder (Loaded dynamically) -->
+      <div id="appSidebarModals"></div>
+    </main>
+
+    <!-- begin:: Sidebar right -->
+    <div class="app-sidebar-end" id="appRightSidebar">
+      <!-- Loaded dynamically via layout.js -->
+    </div>
+    <!-- end:: Sidebar right -->
+
+    <!-- begin:: Modals Container -->
+    <div id="appModals"></div>
+    <!-- end:: Modals Container -->
+
+    <!-- begin:: Page Scripts -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="libs/global/global.min.js"></script>
+    <script src="js/appSettings.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popup-manager.js"></script>
+    <script src="js/compose-popup.js"></script>
+    <script src="js/rte-editor.js"></script>
+    <script src="js/link-popup.js"></script>
+    <script src="js/file-handling.js"></script>
+    <script src="js/confidential-mode.js"></script>
+    <script src="js/signature-handling.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="js/forward-popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/new.js"></script>
+    <script src="js/layout.js"></script>
+    <!-- Gmail Reply JS -->
+    <script>
+      $(document).ready(function () {
+        // Helper function to format email addresses for display
+        function formatEmailAddress(person) {
+          if (!person) return '';
+          if (person.name && person.name !== person.email) {
+            return `${person.name} <${person.email}>`;
+          }
+          return person.email;
+        }
+
+        // Helper function to get all reply recipients (excluding current user)
+        function getReplyRecipients(email, includeAll = false) {
+          if (!email) return { to: [], cc: [] };
+
+          const currentUserEmail = $('#user-email').text().trim().toLowerCase();
+          const recipients = { to: [], cc: [] };
+
+          // Always reply to the sender (from)
+          if (email.from && email.from.email.toLowerCase() !== currentUserEmail) {
+            recipients.to.push(email.from);
+          }
+
+          if (includeAll) {
+            // For Reply All, include all original To recipients (except current user)
+            if (email.to && email.to.length > 0) {
+              email.to.forEach(person => {
+                if (person.email.toLowerCase() !== currentUserEmail &&
+                  !recipients.to.find(p => p.email.toLowerCase() === person.email.toLowerCase())) {
+                  recipients.to.push(person);
+                }
+              });
+            }
+
+            // For Reply All, include all CC recipients (except current user)
+            if (email.cc && email.cc.length > 0) {
+              email.cc.forEach(person => {
+                if (person.email.toLowerCase() !== currentUserEmail) {
+                  recipients.cc.push(person);
+                }
+              });
+            }
+          }
+
+          return recipients;
+        }
+
+        // Reply button handler (Reply to sender only)
+        $('#gmail-reply-btn, #header-reply-btn').on('click', function (e) {
+          e.preventDefault();
+
+          const email = window.currentEmailData;
+          if (!email) {
+            console.error('No email data available');
+            return;
+          }
+
+          const recipients = getReplyRecipients(email, false);
+
+          // Update reply header with To recipients
+          const toText = recipients.to.map(formatEmailAddress).join(', ');
+          $('#reply-to-value').text(toText);
+
+          // Hide CC and BCC fields for simple reply
+          $('.gmail-reply-cc-field, .gmail-reply-bcc-field').addClass('d-none');
+          $('#reply-cc-value, #reply-bcc-value').text('');
+
+          // Show reply editor
+          $('#gmail-reply-editor').addClass('show');
+          $('.mail-read-bottom-bar').hide();
+
+          // Scroll to the reply editor
+          $('html, body').animate({
+            scrollTop: $("#gmail-reply-editor").offset().top - 100
+          }, 500);
+
+          // Focus content
+          $('#gmail-reply-body').focus();
+        });
+
+        // Reply All button handler (Reply to all recipients)
+        $('#gmail-reply-all-btn').on('click', function (e) {
+          e.preventDefault();
+
+          const email = window.currentEmailData;
+          if (!email) {
+            console.error('No email data available');
+            return;
+          }
+
+          const recipients = getReplyRecipients(email, true);
+
+          // Update reply header with To recipients
+          const toText = recipients.to.map(formatEmailAddress).join(', ');
+          $('#reply-to-value').text(toText);
+
+          // Update CC field if there are CC recipients
+          if (recipients.cc.length > 0) {
+            const ccText = recipients.cc.map(formatEmailAddress).join(', ');
+            $('#reply-cc-value').text(ccText);
+            $('.gmail-reply-cc-field').removeClass('d-none');
+          } else {
+            $('.gmail-reply-cc-field').addClass('d-none');
+            $('#reply-cc-value').text('');
+          }
+
+          // Hide BCC field (not used in Reply All)
+          $('.gmail-reply-bcc-field').addClass('d-none');
+          $('#reply-bcc-value').text('');
+
+          // Show reply editor
+          $('#gmail-reply-editor').addClass('show');
+          $('.mail-read-bottom-bar').hide();
+
+          // Scroll to the reply editor
+          $('html, body').animate({
+            scrollTop: $("#gmail-reply-editor").offset().top - 100
+          }, 500);
+
+          // Focus content
+          $('#gmail-reply-body').focus();
+        });
+
+        $('#discard-reply').on('click', function () {
+          $('#gmail-reply-editor').removeClass('show');
+          $('.mail-read-bottom-bar').show(); // Show Reply/Forward buttons again
+        });
+
+        $('.gmail-reply-wrapper, .forward-popup').on('click', '.btn[title="Text formatting"], .btn[data-bs-title="Text formatting"]', function (e) {
+          e.preventDefault();
+          const $wrapper = $(this).closest('.gmail-reply-wrapper, .forward-popup');
+          const $toolbar = $wrapper.find('.formatting-toolbar');
+          const isShow = $toolbar.toggleClass('show').hasClass('show');
+          $(this).toggleClass('active', isShow);
+
+          if (isShow) {
+            $(this).css({ 'background-color': '#e8f0fe', 'color': '#0b57d0' });
+          } else {
+            $(this).css({ 'background-color': 'transparent', 'color': '#5f6368' });
+          }
+        });
+
+        // Handle formatting commands
+        $('#gmail-reply-editor button[data-command]').on('click', function (e) {
+          e.preventDefault();
+          const command = $(this).data('command');
+          const value = $(this).data('value') || null;
+
+          $('#gmail-reply-body').focus();
+          document.execCommand(command, false, value);
+        });
+
+        $('#gmail-reply-editor select[data-command]').on('change', function () {
+          const command = $(this).data('command');
+          const value = $(this).val();
+          document.execCommand(command, false, value);
+          $('#gmail-reply-body').focus();
+        });
+
+        $('#discard-reply, #gmail-reply-editor .compose-trash-btn').on('click', function () {
+          $('#gmail-reply-editor').removeClass('show');
+          $('.mail-read-bottom-bar').show(); // Show Reply/Forward buttons again
+          // Reset formatting bar if it was open
+          $('#gmail-reply-editor .formatting-toolbar').removeClass('show');
+          $('#gmail-reply-editor .btn[title="Text formatting"], #gmail-reply-editor .btn[data-bs-title="Text formatting"]').removeClass('active').css({
+            'background-color': 'transparent',
+            'color': '#5f6368'
+          });
+        });
+
+        // --- NEW: Schedule Send Logic for Forward & Reply ---
+        const $replyToggle = $('#reply-send-dropdown-toggle');
+        const $replyMenu = $('#reply-send-dropdown-menu');
+        const $forwardToggle = $('#forward-send-dropdown-toggle');
+        const $forwardMenu = $('#forward-send-dropdown-menu');
+
+        $replyToggle.on('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          $replyMenu.toggleClass('d-none show');
+        });
+
+        $forwardToggle.on('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          $forwardMenu.toggleClass('d-none show');
+        });
+
+        $(document).on('click', function (e) {
+          if (!$replyToggle.is(e.target) && $replyToggle.has(e.target).length === 0 &&
+            !$replyMenu.is(e.target) && $replyMenu.has(e.target).length === 0) {
+            $replyMenu.addClass('d-none').removeClass('show');
+          }
+          if (!$forwardToggle.is(e.target) && $forwardToggle.has(e.target).length === 0 &&
+            !$forwardMenu.is(e.target) && $forwardMenu.has(e.target).length === 0) {
+            $forwardMenu.addClass('d-none').removeClass('show');
+          }
+        });
+
+        $('.open-schedule-modal').on('click', function () {
+          $replyMenu.addClass('d-none').removeClass('show');
+          $forwardMenu.addClass('d-none').removeClass('show');
+          const scheduleModalEl = document.getElementById('scheduleSendModal');
+          if (scheduleModalEl) {
+            const scheduleModal = bootstrap.Modal.getOrCreateInstance(scheduleModalEl);
+            scheduleModal.show();
+          }
+        });
+
+        $(window).resize(checkWidth);
+      });
+    </script>
+    <!-- end:: Page Scripts -->
+</body>
+
+</html>

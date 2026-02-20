@@ -1,0 +1,149 @@
+<div class="app-navbar-brand">
+    <a class="navbar-brand-logo" href="index.html">
+        <img src="images/logo.svg" alt=" Admin Dashboard Logo">
+    </a>
+    <a class="navbar-brand-mini visible-light" href="index.html">
+        <img src="images/logo-text.svg" alt=" Admin Dashboard Logo">
+    </a>
+    <a class="navbar-brand-mini visible-dark" href="index.html">
+        <img src="images/logo-text-white.svg" alt=" Admin Dashboard Logo">
+    </a>
+</div>
+<nav class="app-navbar p-0" data-simplebar>
+    <a href="#" class="btn btn-primary waves-effect waves-light m-3 compose-btn">
+        <span class="icon-pen-line me-2"></span>
+        Compose
+    </a>
+    <ul class="menubar mail-nav mt-2 me-3" id="myTab" role="tablist" data-simplebar>
+        <li class="menu-item">
+            <a href="#inbox-tab" class="mail-nav-item menu-link active align-items-center" data-bs-toggle="tab"
+                data-bs-target="#inbox-tab" role="tab" aria-controls="inbox-tab" aria-selected="true" data-tab="inbox">
+                <span class="icon-inbox-1 me-2"></span>
+                <span class="menu-label">Inbox</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#drafts-tab" class="mail-nav-item menu-link align-items-center" data-bs-toggle="tab"
+                data-bs-target="#drafts-tab" role="tab" aria-controls="drafts-tab" aria-selected="false"
+                data-tab="draft">
+                <span class="icon-square-pen me-2"></span>
+                <span class="menu-label">Draft</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#spam-tab" class="mail-nav-item menu-link align-items-center" data-bs-toggle="tab"
+                data-bs-target="#spam-tab" role="tab" aria-controls="spam-tab" aria-selected="false" data-tab="spam">
+                <span class="icon-message-circle-warning me-2"></span>
+                <span class="menu-label">Spam</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#sent-tab" class="mail-nav-item menu-link align-items-center" data-bs-toggle="tab"
+                data-bs-target="#sent-tab" role="tab" aria-controls="sent-tab" aria-selected="false" data-tab="sent">
+                <span class="icon-send me-2"></span>
+                <span class="menu-label">Sent</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#starred-tab" class="mail-nav-item menu-link align-items-center" data-bs-toggle="tab"
+                data-bs-target="#starred-tab" role="tab" aria-controls="starred-tab" aria-selected="false"
+                data-tab="starred">
+                <span class="icon-star-1 me-2"></span>
+                <span class="menu-label"> Starred</span>
+            </a>
+        </li>
+
+        <!-- productivity features -->
+        <li class="menu-heading">
+            <span class="menu-label">Productivity features</span>
+        </li>
+        <li class="menu-item">
+            <a class="mail-nav-item menu-link align-items-center cursor-pointer"
+                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                <span class="icon-layers-2 me-2"></span>
+                <span class="menu-label">Smart sort</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a class="mail-nav-item menu-link align-items-center cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#autolabel">
+                <span class="icon-tags me-2"></span>
+                <span class="menu-label"> Auto label</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a class="mail-nav-item menu-link align-items-center cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                <span class="icon-calendar-days me-2"></span>
+                <span class="menu-label">Reminder</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a class="mail-nav-item menu-link align-items-center cursor-pointer" data-bs-toggle="modal"
+                data-bs-target="#template">
+                <span class="icon-layout-template me-2"></span>
+                <span class="menu-label">Templates</span>
+            </a>
+        </li>
+
+        <li class="menu-heading sidebar-items-mobile">
+            <span class="menu-label">Email Actions</span>
+        </li>
+        <li class="menu-item sidebar-items-mobile">
+            <a href="#assign-tab" class="mail-nav-item menu-link align-items-center assign-email" data-bs-toggle="tab"
+                data-bs-target="#assign-tab" role="tab" aria-controls="assign-tab" aria-selected="false">
+                <span class="icon-team me-2"></span>
+                <span class="menu-label">Assign Email </span>
+            </a>
+        </li>
+        <li class="menu-item sidebar-items-mobile">
+            <a href="#connect-tab" class="mail-nav-item menu-link align-items-center connect" data-bs-toggle="tab"
+                data-bs-target="#connect-tab" role="tab" aria-controls="connect-tab" aria-selected="false">
+                <span class="icon-share-2 me-2"></span>
+                <span class="menu-label">Connect</span>
+            </a>
+        </li>
+        <li class="menu-item sidebar-items-mobile">
+            <a href="#open-email-tab" class="mail-nav-item menu-link align-items-center open-email" data-bs-toggle="tab"
+                data-bs-target="#open-email-tab" role="tab" aria-controls="open-email-tab" aria-selected="false">
+                <span class="icon-package-open me-2"></span>
+                <span class="menu-label">Open Email</span>
+            </a>
+        </li>
+        <li class="menu-item sidebar-items-mobile">
+            <a href="#unopen-email-tab" class="mail-nav-item menu-link align-items-center unopen-email"
+                data-bs-toggle="tab" data-bs-target="#unopen-email-tab" role="tab" aria-controls="unopen-email-tab"
+                aria-selected="false">
+                <span class="icon-package me-2"></span>
+                <span class="menu-label">Unopened Emails</span>
+            </a>
+        </li>
+        <li class="menu-item sidebar-items-mobile">
+            <a href="#team-tab" class="mail-nav-item menu-link align-items-center add-team" data-bs-toggle="tab"
+                data-bs-target="#team-tab" role="tab" aria-controls="team-tab" aria-selected="false">
+                <span class="icon-contact me-2"></span>
+                <span class="menu-label">Add to Team</span>
+            </a>
+        </li>
+        <li class="menu-item sidebar-items-mobile">
+            <a href="#askai-tab" class="mail-nav-item menu-link align-items-center ask-ai" data-bs-toggle="tab"
+                data-bs-target="#askai-tab" role="tab" aria-controls="askai-tab" aria-selected="false">
+                <span class="icon-brain me-2"></span>
+                <span class="menu-label">Ask AI</span>
+            </a>
+        </li>
+
+        <li class="menu-heading">
+            <span class="menu-label"> <span class="icon-lightbulb"></span>
+                Reply suggestion </span>
+        </li>
+        <li class="menu-item">
+            <form class="compose-form">
+                <div class="form-group position-relative pt-0">
+                    <textarea class="form-control compose-message border-0" rows="10"
+                        placeholder="Click to see options.."></textarea>
+                </div>
+            </form>
+        </li>
+    </ul>
+</nav>

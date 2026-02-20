@@ -1,0 +1,68 @@
+{
+    "title": "Reminder",
+    "fields": {
+        "from": {
+            "label": "From",
+            "placeholder": "From",
+            "required": true,
+            "type": "text"
+        },
+        "label": {
+            "label": "Label",
+            "placeholder": "Label",
+            "required": true,
+            "type": "text"
+        },
+        "subject": {
+            "label": "Subject",
+            "placeholder": "Subject",
+            "required": true,
+            "type": "text"
+        }
+    },
+    "options": {
+        "type": "radio_group",
+        "key": "reminder_time",
+        "items": [
+            {
+                "id": "later_today",
+                "label": "Later today",
+                "description": "06:00 PM",
+                "value": "today_18_00"
+            },
+            {
+                "id": "tomorrow_morning",
+                "label": "Tomorrow morning",
+                "description": "10:00 AM",
+                "value": "tomorrow_10_00"
+            },
+            {
+                "id": "custom",
+                "label": "Pick date & time",
+                "value": "custom_datetime",
+                "selected": true,
+                "opens": "datetime_picker"
+            }
+        ]
+    },
+    "actions": {
+        "primary": {
+            "type": "button",
+            "label": "Confirm",
+            "action": "set_reminder",
+            "style": "primary"
+        },
+        "secondary": [
+            {
+                "type": "button",
+                "label": "Cancel",
+                "action": "close_modal",
+                "style": "outline"
+            }
+        ]
+    },
+    "settings": {
+        "closeable": true,
+        "dismissOnOutsideClick": true
+    }
+}

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <!-- begin:: Website Page Title -->
+  <title>SuperComp.AI</title>
+  <!-- end:: Website Page Title -->
+
+  <!-- begin:: Mobile Specific -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- end:: Mobile Specific -->
+
+  <!-- begin:: Favicon Tags -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- end:: Favicon Tags -->
+
+  <!-- begin:: Required Stylesheet -->
+  <link rel="stylesheet" href="libs/flaticon/css/all/all.css">
+  <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="libs/simplebar/simplebar.css">
+  <!-- <link rel="stylesheet" href="libs/bootstrap-select/css/bootstrap-select.min.css"> -->
+  <!-- end:: Required Stylesheet -->
+
+  <!-- begin:: CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/rte-editor.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <!-- <link rel="stylesheet" href="css/search-dropdown.css"> -->
+  <!-- end:: CSS Stylesheet -->
+
+</head>
+
+<body>
+  <div class="page-layout">
+
+    <header class="app-header" id="appHeader">
+      <!-- Loaded dynamically via layout.js -->
+    </header>
+
+    <!-- begin:: Sidebar Menu -->
+    <aside class="app-menubar" id="appMenubar">
+      <!-- Loaded dynamically via layout.js -->
+    </aside>
+    <!-- end:: Sidebar Menu -->
+
+    <!-- begin:: Sidebar right -->
+    <div class="app-sidebar-end" id="appRightSidebar">
+      <!-- Loaded dynamically via layout.js -->
+    </div>
+    <!-- end:: Sidebar right -->
+
+    <main class="d-flex app-wrapper px-3 ps-xl-0 pe-xxl-0 column-gap-3">
+      <!-- <div class="row"> -->
+      <!-- <div class="col-12"> -->
+      <div class="card card-body overflow-hidden mail-wrapper p-0">
+        <div class="sidebar-mobile-overlay"></div>
+
+        <div class="mail-body ">
+          <div class="tab-content h-100" id="myTabContent">
+            <div class="tab-pane fade show active" id="inbox-tab" role="tabpanel" aria-labelledby="inbox-tab">
+              <div class="checkable-wrapper h-100">
+                <div>
+                  <div class="d-sm-flex align-items-center justify-content-between">
+                    <div class="d-flex  px-3 py-2 align-items-center gap-2 ">
+                      <!-- <div class="form-check m-0 ms-1 checkable">
+                        <input class="form-check-input checkable-check-all" type="checkbox">
+                      </div> -->
+
+                      <div class="checkable-select btn-group ms-1">
+                        <div class="form-check m-0 checkable">
+                          <input class="form-check-input checkable-check-all" type="checkbox" aria-label="Select">
+                        </div>
+
+                        <button class="btn checkable-dropdown-toggle dropdown-toggle dropdown-toggle-split p-0"
+                          type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select options">
+                          <span class="icon-down-arrow"></span>
+                        </button>
+
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item checkable-select-action" href="#" data-select="all">All</a></li>
+                          <li><a class="dropdown-item checkable-select-action" href="#" data-select="none">None</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item checkable-select-action" href="#" data-select="read">Read</a></li>
+                          <li><a class="dropdown-item checkable-select-action" href="#" data-select="unread">Unread</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item checkable-select-action" href="#"
+                              data-select="starred">Starred</a>
+                          </li>
+                          <li><a class="dropdown-item checkable-select-action" href="#"
+                              data-select="unstarred">Unstarred</a></li>
+                        </ul>
+                      </div>
+
+
+                      <a href="javascript:void(0);" class="text-body ms-1 d-flex align-items-center">
+                        <!-- <i class="fi fi-rr-rotate-right"></i> -->
+                        <span class="icon-refresh"></span>
+                      </a>
+                    </div>
+                    <div class="mail-header">
+                      <button
+                        class="btn bg-dark-subtle btn-white btn-shadow btn-icon waves-effect mail-sidebar-toggler d-lg-none">
+                        <i class="fi fi-rs-list d-flex align-items-center"></i>
+                      </button>
+                      <div class="d-flex align-items-center gap-3">
+                        <span>1 - 50 of 570</span>
+                        <div class="d-flex gap-2">
+                          <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                            <span class="icon-left-arrow "></span>
+                          </button>
+                          <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                            <span class="icon-right-arrow"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                  <ul class="nav nav-tabs" id="inbox-sub-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#" data-inbox-tab="primary"> <span class="icon-inbox"></span>
+                        Primary</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link operations" href="#" data-inbox-tab="operations"> <span
+                          class="icon-truck"></span>
+                        Operations</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link accounts" href="#" data-inbox-tab="accounts"> <span
+                          class="icon-indian-rupee"></span>
+                        Accounts</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link documentation" href="#" data-inbox-tab="documentation"> <span
+                          class="icon-file"></span>
+                        Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link updates" href="#" data-inbox-tab="updates"> <span class="icon-bell"></span>
+                        Updates</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link others" href="#" data-inbox-tab="others"> <span class="icon-folder"></span>
+                        Others</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link tracking" href="#" data-inbox-tab="tracking"> <span class="icon-map-pin"></span>
+                        Tracking</a>
+                    </li> -->
+
+                  </ul>
+                </div>
+                <ul class="list-unstyled mail-list m-0 gradient-layer p-0 overflow-auto" id="inbox-mail-list"
+                  data-simplebar></ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="sent-tab" role="tabpanel" aria-labelledby="sent-tab">
+              <div class="checkable-wrapper h-100">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                  <div class="d-flex  px-3 py-2 align-items-center gap-2 ">
+                    <!-- <div class="form-check m-0 ms-1 checkable">
+                      <input class="form-check-input checkable-check-all" type="checkbox">
+                    </div> -->
+
+                    <div class="checkable-select btn-group ms-1">
+                      <div class="form-check m-0 checkable">
+                        <input class="form-check-input checkable-check-all" type="checkbox" aria-label="Select">
+                      </div>
+
+                      <button class="btn checkable-dropdown-toggle dropdown-toggle dropdown-toggle-split p-0"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select options">
+                        <span class="icon-down-arrow"></span>
+                      </button>
+
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="all">All</a></li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="none">None</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="read">Read</a></li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="unread">Unread</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="starred">Starred</a>
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#"
+                            data-select="unstarred">Unstarred</a></li>
+                      </ul>
+                    </div>
+
+
+                    <a href="javascript:void(0);" class="text-body ms-1 d-flex align-items-center">
+                      <!-- <i class="fi fi-rr-rotate-right"></i> -->
+                      <span class="icon-refresh"></span>
+                    </a>
+                  </div>
+                  <div class="mail-header">
+                    <button
+                      class="btn bg-dark-subtle btn-white btn-shadow btn-icon waves-effect mail-sidebar-toggler d-lg-none">
+                      <i class="fi fi-rs-list d-flex align-items-center"></i>
+                    </button>
+                    <div class="d-flex align-items-center gap-3">
+                      <span>1 - 50 of 570</span>
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                          <span class="icon-left-arrow "></span>
+                        </button>
+                        <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                          <span class="icon-right-arrow"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <ul class="list-unstyled mail-list m-0 gradient-layer p-0" data-simplebar></ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="drafts-tab" role="tabpanel" aria-labelledby="drafts-tab">
+              <div class="checkable-wrapper h-100">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                  <div class="d-flex  px-3 py-2 align-items-center gap-2 ">
+                    <!-- <div class="form-check m-0 ms-1 checkable">
+                      <input class="form-check-input checkable-check-all" type="checkbox">
+                    </div> -->
+
+                    <div class="checkable-select btn-group ms-1">
+                      <div class="form-check m-0 checkable">
+                        <input class="form-check-input checkable-check-all" type="checkbox" aria-label="Select">
+                      </div>
+
+                      <button class="btn checkable-dropdown-toggle dropdown-toggle dropdown-toggle-split p-0"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select options">
+                        <span class="icon-down-arrow"></span>
+                      </button>
+
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="all">All</a></li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="none">None</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="read">Read</a></li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="unread">Unread</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="starred">Starred</a>
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#"
+                            data-select="unstarred">Unstarred</a></li>
+                      </ul>
+                    </div>
+
+
+                    <a href="javascript:void(0);" class="text-body ms-1 d-flex align-items-center">
+                      <!-- <i class="fi fi-rr-rotate-right"></i> -->
+                      <span class="icon-refresh"></span>
+                    </a>
+                  </div>
+                  <div class="mail-header">
+                    <button
+                      class="btn bg-dark-subtle btn-white btn-shadow btn-icon waves-effect mail-sidebar-toggler d-lg-none">
+                      <i class="fi fi-rs-list d-flex align-items-center"></i>
+                    </button>
+                    <div class="d-flex align-items-center gap-3">
+                      <span>1 - 50 of 570</span>
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                          <span class="icon-left-arrow "></span>
+                        </button>
+                        <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                          <span class="icon-right-arrow"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <ul class="list-unstyled mail-list m-0 gradient-layer p-0" data-simplebar></ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="starred-tab" role="tabpanel" aria-labelledby="starred-tab">
+              <div class="checkable-wrapper h-100">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                  <div class="d-flex  px-3 py-2 align-items-center gap-2 ">
+                    <!-- <div class="form-check m-0 ms-1 checkable">
+                      <input class="form-check-input checkable-check-all" type="checkbox">
+                    </div> -->
+
+                    <div class="checkable-select btn-group ms-1">
+                      <div class="form-check m-0 checkable">
+                        <input class="form-check-input checkable-check-all" type="checkbox" aria-label="Select">
+                      </div>
+
+                      <button class="btn checkable-dropdown-toggle dropdown-toggle dropdown-toggle-split p-0"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select options">
+                        <span class="icon-down-arrow"></span>
+                      </button>
+
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="all">All</a></li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="none">None</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="read">Read</a></li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="unread">Unread</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="starred">Starred</a>
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#"
+                            data-select="unstarred">Unstarred</a></li>
+                      </ul>
+                    </div>
+
+
+                    <a href="javascript:void(0);" class="text-body ms-1 d-flex align-items-center">
+                      <!-- <i class="fi fi-rr-rotate-right"></i> -->
+                      <span class="icon-refresh"></span>
+                    </a>
+                  </div>
+                  <div class="mail-header">
+                    <button
+                      class="btn bg-dark-subtle btn-white btn-shadow btn-icon waves-effect mail-sidebar-toggler d-lg-none">
+                      <i class="fi fi-rs-list d-flex align-items-center"></i>
+                    </button>
+                    <div class="d-flex align-items-center gap-3">
+                      <span>1 - 50 of 570</span>
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                          <span class="icon-left-arrow "></span>
+                        </button>
+                        <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                          <span class="icon-right-arrow"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <ul class="list-unstyled mail-list m-0 gradient-layer p-0" data-simplebar></ul>
+              </div>
+            </div>
+            <!-- Spam Tab -->
+            <div class="tab-pane fade" id="spam-tab" role="tabpanel" aria-labelledby="spam-tab">
+              <div class="checkable-wrapper h-100">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                  <div class="d-flex px-3 py-2 align-items-center gap-2">
+                    <div class="checkable-select btn-group ms-1">
+                      <div class="form-check m-0 checkable">
+                        <input class="form-check-input checkable-check-all" type="checkbox" aria-label="Select">
+                      </div>
+                      <button class="btn checkable-dropdown-toggle dropdown-toggle dropdown-toggle-split p-0"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select options">
+                        <span class="icon-down-arrow"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="all">All</a></li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="none">None</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="read">Read</a></li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="unread">Unread</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#" data-select="starred">Starred</a>
+                        </li>
+                        <li><a class="dropdown-item checkable-select-action" href="#"
+                            data-select="unstarred">Unstarred</a></li>
+                      </ul>
+                    </div>
+                    <a href="javascript:void(0);" class="text-body ms-1 d-flex align-items-center">
+                      <span class="icon-refresh"></span>
+                    </a>
+                  </div>
+                  <div class="mail-header">
+                    <button
+                      class="btn bg-dark-subtle btn-white btn-shadow btn-icon waves-effect mail-sidebar-toggler d-lg-none">
+                      <i class="fi fi-rs-list d-flex align-items-center"></i>
+                    </button>
+                    <div class="d-flex align-items-center gap-3">
+                      <span>1 - 50 of 570</span>
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                          <span class="icon-left-arrow"></span>
+                        </button>
+                        <button class="btn btn-white btn-shadow btn-icon waves-effect">
+                          <span class="icon-right-arrow"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-unstyled mail-list m-0 gradient-layer p-0" data-simplebar></ul>
+              </div>
+            </div>
+
+            <!-- Productivity & Action Tabs (Loaded dynamically) -->
+            <div class="tab-pane fade h-100" id="assign-tab" role="tabpanel" aria-labelledby="assign-tab">
+              <div id="content-assign-email-mobile" class="h-100"></div>
+            </div>
+
+            <div class="tab-pane fade h-100" id="connect-tab" role="tabpanel" aria-labelledby="connect-tab">
+              <div id="content-connect-mobile" class="h-100"></div>
+            </div>
+
+            <div class="tab-pane fade h-100" id="open-email-tab" role="tabpanel" aria-labelledby="open-email-tab">
+              <div id="content-open-email-mobile" class="h-100"></div>
+            </div>
+
+            <div class="tab-pane fade h-100" id="unopen-email-tab" role="tabpanel" aria-labelledby="unopen-email-tab">
+              <div id="content-unopen-email-mobile" class="h-100"></div>
+            </div>
+
+            <div class="tab-pane fade h-100" id="team-tab" role="tabpanel" aria-labelledby="team-tab">
+              <div id="content-team-mobile" class="h-100"></div>
+            </div>
+
+            <div class="tab-pane fade h-100" id="askai-tab" role="tabpanel" aria-labelledby="askai-tab">
+              <div id="content-ask-ai-mobile" class="h-100"></div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Modals Placeholder (Loaded dynamically) -->
+      <div id="appSidebarModals"></div>
+    </main>
+  </div>
+
+  <!-- App Modals Placeholder -->
+  <div id="appModals"></div>
+
+  <!-- begin:: Page Scripts -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="libs/global/global.min.js"></script>
+  <script src="js/appSettings.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/popup-manager.js"></script>
+  <script src="js/compose-popup.js"></script>
+  <script src="js/rte-editor.js"></script>
+  <script src="js/link-popup.js"></script>
+  <script src="js/file-handling.js"></script>
+  <script src="js/confidential-mode.js"></script>
+  <script src="js/signature-handling.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/new.js"></script>
+  <script src="js/layout.js"></script>
+  <!-- end:: Page Scripts -->
+</body>
+
+</html>

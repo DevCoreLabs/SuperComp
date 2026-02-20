@@ -1,0 +1,57 @@
+{
+    "title": "Add to team",
+    "layout": "tab_modal",
+    "tabs": {
+        "active": "add_to_team",
+        "items": [
+            {
+                "key": "add_to_team",
+                "label": "Add to team",
+                "content": {
+                    "description": "Move faster as a team. Unlock collaborative features like Shared conversations, Team Comments, and Team Snippets.",
+                    "note": "You will be billed for each teammate who joins",
+                    "fields": {
+                        "inviteInput": {
+                            "type": "textarea",
+                            "placeholder": "Enter name or email address"
+                        }
+                    },
+                    "actions": {
+                        "primary": {
+                            "type": "button",
+                            "label": "Send invite",
+                            "variant": "primary"
+                        },
+                        "secondary": {
+                            "type": "button",
+                            "label": "Copy team join link",
+                            "variant": "secondary"
+                        }
+                    }
+                }
+            },
+            {
+                "key": "talk_to_sales",
+                "label": "Talk to sales",
+                "content": {
+                    "description": "Contact our sales team for more information or to upgrade your plan.",
+                    "fields": {
+                        "contactInput": {
+                            "type": "textarea",
+                            "placeholder": "Enter name or email address",
+                            "value": ""
+                        }
+                    },
+                    "actions": {
+                        "primary": {
+                            "type": "button",
+                            "label": "Send to sales",
+                            "action": "send_to_sales",
+                            "style": "primary"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

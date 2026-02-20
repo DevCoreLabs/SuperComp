@@ -1,0 +1,57 @@
+{
+    "unopenedEmails": {
+        "title": "Unopened Emails",
+        "search": {
+            "type": "input",
+            "placeholder": "Search mail"
+        },
+        "groupBy": "date",
+        "items": [
+            {
+                "date": "2025-11-09",
+                "emails": [
+                    {
+                        "id": "ue_101",
+                        "from": "pixelmarket@gmail.com",
+                        "label": "Pixeln Market",
+                        "subject": "fresh color kit",
+                        "notify": true
+                    },
+                    {
+                        "id": "ue_102",
+                        "from": "pixelmarket@gmail.com",
+                        "label": "Pixeln Market",
+                        "subject": "fresh color kit",
+                        "notify": false
+                    },
+                    {
+                        "id": "ue_103",
+                        "from": "pixelmarket@gmail.com",
+                        "label": "Pixeln Market",
+                        "subject": "fresh color kit",
+                        "notify": false
+                    }
+                ]
+            },
+            {
+                "date": "2025-11-08",
+                "emails": [
+                    {
+                        "id": "ue_104",
+                        "from": "pixelmarket@gmail.com",
+                        "label": "Pixeln Market",
+                        "subject": "fresh color kit",
+                        "notify": false
+                    },
+                    {
+                        "id": "ue_105",
+                        "from": "pixelmarket@gmail.com",
+                        "label": "Pixeln Market",
+                        "subject": "fresh color kit",
+                        "notify": false
+                    }
+                ]
+            }
+        ]
+    }
+}

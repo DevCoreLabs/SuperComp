@@ -1,0 +1,124 @@
+{
+    "title": "Create a new template",
+    "fields": {
+        "shortcut": {
+            "type": "text",
+            "label": "Shortcut",
+            "placeholder": "Eg. Sales",
+            "value": "",
+            "required": true
+        },
+        "emailSubject": {
+            "type": "text",
+            "label": "Email subject",
+            "placeholder": "Enter email subject",
+            "value": "",
+            "required": true
+        },
+        "templateBody": {
+            "type": "rich_text",
+            "label": "Template body",
+            "placeholder": "Enter your message here...",
+            "value": "",
+            "toolbar": [
+                "font",
+                "textSize",
+                "bold",
+                "italic",
+                "underline",
+                "strike",
+                "link",
+                "image",
+                "bulletList",
+                "numberList"
+            ]
+        }
+    },
+    "actions": {
+        "primary": {
+            "type": "button",
+            "label": "Save template",
+            "action": "save_template",
+            "style": "primary"
+        },
+        "secondary": [
+            {
+                "type": "button",
+                "label": "AI improv",
+                "action": "ai_improve",
+                "style": "outline",
+                "icon": "sparkle"
+            }
+        ]
+    },
+    "variables": {
+        "label": "Add variables to template",
+        "list": [
+            {
+                "key": "recipient_name",
+                "label": "Recipient name"
+            },
+            {
+                "key": "company_name",
+                "label": "Company name"
+            },
+            {
+                "key": "date",
+                "label": "Date"
+            },
+            {
+                "key": "additional_info",
+                "label": "Additional info"
+            },
+            {
+                "key": "reminder",
+                "label": "Reminder"
+            },
+            {
+                "key": "air_freight_rate",
+                "label": "Air freight rate"
+            }
+        ],
+        "actions": [
+            {
+                "type": "button",
+                "label": "Create new variable",
+                "action": "create_variable"
+            }
+        ]
+    },
+    "savedTemplates": {
+        "label": "Saved templates",
+        "items": [
+            {
+                "id": "sales",
+                "shortcut": "/Sales",
+                "actions": [
+                    "edit",
+                    "delete"
+                ]
+            },
+            {
+                "id": "freight",
+                "shortcut": "/Freight",
+                "actions": [
+                    "edit",
+                    "delete"
+                ]
+            },
+            {
+                "id": "ocean_rate",
+                "shortcut": "/Ocean rate",
+                "actions": [
+                    "edit",
+                    "delete"
+                ]
+            }
+        ]
+    },
+    "settings": {
+        "closeable": true,
+        "resizable": true,
+        "scrollable": true
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "title": "Create variable",
+    "fields": {
+        "variableName": {
+            "type": "text",
+            "label": "Variable name",
+            "placeholder": "Enter the variable here",
+            "value": "",
+            "required": true
+        }
+    },
+    "actions": {
+        "primary": {
+            "type": "button",
+            "label": "Save",
+            "action": "save_variable",
+            "style": "primary"
+        },
+        "secondary": [
+            {
+                "type": "button",
+                "label": "Cancel",
+                "action": "close_modal",
+                "style": "outline"
+            }
+        ]
+    },
+    "settings": {
+        "closeable": true,
+        "resizable": false,
+        "dismissOnOutsideClick": true
+    }
+}

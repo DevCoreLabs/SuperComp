@@ -1,0 +1,202 @@
+/* Rich Text Editor Container */
+.rte-container {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Toolbar Styling */
+.icon-bold_line:before,
+.icon-italic_line:before,
+.icon-underline_line:before,
+.icon-strikethrough_line:before,
+.icon-align_right_line:before,
+.icon-list_check_line:before,
+.icon-list_ordered_line:before {
+    font-size: 13px;
+}
+
+.rte-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    background: rgba(169, 207, 237, 0.1);
+    gap: 4px;
+    align-items: center;
+}
+
+.rte-toolbar-group {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding-right: 8px;
+    margin-right: 8px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rte-toolbar-group:last-child {
+    border-right: none;
+    margin-right: 0;
+}
+
+.rte-btn {
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #444;
+    transition: background 0.2s;
+}
+
+.rte-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.rte-btn.active {
+    background: rgba(79, 191, 243, 0.15);
+    color: #4784b6;
+}
+
+.rte-btn i {
+    font-size: 16px;
+}
+
+.compose-popup .rte-toolbar-group,
+.gmail-reply-wrapper .rte-toolbar-group,
+.forward-popup .rte-toolbar-group {
+    gap: 2px;
+    margin-right: 12px;
+    padding-right: 12px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.compose-popup .rte-btn {
+    width: 28px;
+    height: 28px;
+}
+
+.rte-select {
+    padding: 2px 8px !important;
+    border: 1px solid transparent !important;
+    border-radius: 4px !important;
+    background: transparent !important;
+    font-size: 13px;
+    color: #444;
+    cursor: pointer;
+    height: 32px;
+}
+
+/* Editor Body */
+.rte-editor {
+    flex: 1;
+    padding: 16px;
+    outline: none;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #222;
+}
+
+.rte-editor:empty:before {
+    content: attr(data-placeholder);
+    color: #aaa;
+    pointer-events: none;
+}
+
+/* Formatting Toolbar specifically for Compose/Reply Popup */
+.formatting-toolbar {
+    background: #fff;
+    display: flex !important;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    min-height: 0;
+    /* Reset min-height to allow hiding */
+}
+
+.formatting-toolbar .btn-icon {
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #444;
+    border: 1px solid transparent;
+    background: transparent;
+    transition: all 0.2s;
+}
+
+.formatting-toolbar .btn-icon:hover {
+    background: #eee !important;
+    color: #202124;
+}
+
+.formatting-toolbar .btn-icon.active {
+    background: #e8f0fe !important;
+    color: #0b57d0 !important;
+}
+
+.formatting-toolbar .vr {
+    width: 1px;
+    height: 20px;
+    background: #e0e0e0;
+    margin: 0 4px;
+}
+
+/* Custom Selects for Font and Size */
+.formatting-toolbar select {
+    text-align: left;
+    appearance: none;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 2px 24px 2px 8px;
+    font-size: 13px;
+    color: #202124;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 10 10'%3E%3Cpath d='M0 3l5 5 5-5z' fill='%23666'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    height: 32px;
+}
+
+.formatting-toolbar select:hover {
+    background-color: #eee;
+}
+
+/* Color Picker Button */
+.color-picker-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-indicator {
+    width: 16px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: 4px;
+}
+
+/* Color Picker Popover (Simplified for now using native input color) */
+.formatting-toolbar input[type="color"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
