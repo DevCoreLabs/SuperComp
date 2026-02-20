@@ -1,9 +1,3 @@
-/**
- * API Integration for Dynamic Email Loading
- * Handles fetching emails for Inbox, Draft, Spam, Sent, and Starred tabs.
- * Also handles loading single email details on read-email.html.
- */
-
 const API_BASE = "https://api.mail.supercomp.ai/api";
 
 const API_ENDPOINTS = {
